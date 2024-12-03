@@ -7,7 +7,12 @@ export function SongList(props) {
     );
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+    <a
+      href="https://open.spotify.com/intl-ja/track/78W4mTLIh4qoLu92W4IQhO"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8"
+    >
       {Array(20)
         .fill()
         .map(() => {
@@ -25,6 +30,6 @@ export function SongList(props) {
             </div>
           );
         })}
-    </div>
+    </a>
   );
 }
