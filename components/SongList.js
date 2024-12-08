@@ -16,7 +16,6 @@ export function SongList(props) {
               href="https://open.spotify.com/intl-ja/track/78W4mTLIh4qoLu92W4IQhO"
               target="_blank"
               rel="noopener noreferrer"
-              key={song.id}
               className="flex-none cursor-pointer "
             >
               <img
