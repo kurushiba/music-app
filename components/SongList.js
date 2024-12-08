@@ -31,6 +31,6 @@ export function SongList(props) {
             </a>
           );
         })}
-    </a>
+    </div>
   );
 }
