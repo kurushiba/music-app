@@ -7,17 +7,18 @@ export function SongList(props) {
     );
 
   return (
-    <a
-      href="https://open.spotify.com/intl-ja/track/78W4mTLIh4qoLu92W4IQhO"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8"
-    >
+    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
       {Array(20)
         .fill()
         .map(() => {
           return (
-            <div className="flex-none cursor-pointer ">
+            <a
+              href="https://open.spotify.com/intl-ja/track/78W4mTLIh4qoLu92W4IQhO"
+              target="_blank"
+              rel="noopener noreferrer"
+              key={song.id}
+              className="flex-none cursor-pointer "
+            >
               <img
                 alt="thumbnail"
                 src={
@@ -27,7 +28,7 @@ export function SongList(props) {
               />
               <h3 className="text-lg font-semibold">Song Name</h3>
               <p className="text-gray-400">By Artist</p>
-            </div>
+            </a>
           );
         })}
     </a>
